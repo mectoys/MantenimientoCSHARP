@@ -157,6 +157,12 @@
     <Compile Include="Forms\PRO_Orden_Trabajo.Designer.cs">
       <DependentUpon>PRO_Orden_Trabajo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PRO_Orden_Trabajo_reque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PRO_Orden_Trabajo_reque.Designer.cs">
+      <DependentUpon>PRO_Orden_Trabajo_reque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reportes\ADMI_Equipos.cs">
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PRO_Orden_Trabajo.resx">
       <DependentUpon>PRO_Orden_Trabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PRO_Orden_Trabajo_reque.resx">
+      <DependentUpon>PRO_Orden_Trabajo_reque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

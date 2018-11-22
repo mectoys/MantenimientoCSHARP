@@ -186,6 +186,11 @@ namespace GestionMantto.Forms
 
         private void generarOrdenDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+            //Asignación Acceso para ver si esta permito o no Consultar Por su Login
+            access.VarAccesoXsuLogin = access.AccesoConsultaXsuLogin(clase.tomacoduser, 2, 29, 1);
+
+
             PRO_Orden_Trabajo OT = new PRO_Orden_Trabajo();
             OT.MdiParent = this;
             OT.Show();
