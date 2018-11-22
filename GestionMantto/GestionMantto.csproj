@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9C8D7E2-A070-42CF-BB5F-9D9B8AB390C7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GestionMantto</RootNamespace>
+    <AssemblyName>GestionMantto</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudinaryDotNet, Version=1.2.0.0, Culture=neutral, PublicKeyToken=c8234dc617ae7841, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudinaryDotNet.1.2.0\lib\net40\CloudinaryDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudinaryDotNet.1.2.0\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Accesos.cs" />
+    <Compile Include="Clases\AutoCompleClass.cs" />
+    <Compile Include="Clases\ComboBoxLoad.cs" />
+    <Compile Include="Clases\conexion.cs" />
+    <Compile Include="Clases\DireccFacturacion.cs" />
+    <Compile Include="Clases\ImagenUpd.cs" />
+    <Compile Include="Clases\loadFiles.cs" />
+    <Compile Include="Clases\LoadImage.cs" />
+    <Compile Include="Clases\Periodo.cs" />
+    <Compile Include="Clases\recursos.cs" />
+    <Compile Include="Forms\ADM_CambiaClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADM_CambiaClave.Designer.cs">
+      <DependentUpon>ADM_CambiaClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADM_Equipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADM_Equipo.Designer.cs">
+      <DependentUpon>ADM_Equipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADM_Login.Designer.cs">
+      <DependentUpon>ADM_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADM_Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADM_Preview.Designer.cs">
+      <DependentUpon>ADM_Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ADM_TipoCambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ADM_TipoCambio.Designer.cs">
+      <DependentUpon>ADM_TipoCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CON_ExplorarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CON_ExplorarEquipo.Designer.cs">
+      <DependentUpon>CON_ExplorarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CON_Graficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CON_Graficos.Designer.cs">
+      <DependentUpon>CON_Graficos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Man_ClientEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Man_ClientEquip.Designer.cs">
+      <DependentUpon>Man_ClientEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MAN_InfoEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MAN_InfoEquip.Designer.cs">
+      <DependentUpon>MAN_InfoEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PRO_Incidencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PRO_Incidencia.Designer.cs">
+      <DependentUpon>PRO_Incidencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PRO_Orden_Trabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PRO_Orden_Trabajo.Designer.cs">
+      <DependentUpon>PRO_Orden_Trabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ADMI_Equipos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ADMI_Equipos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\reportes.Designer.cs">
+      <DependentUpon>reportes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\ADM_CambiaClave.resx">
+      <DependentUpon>ADM_CambiaClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADM_Equipo.resx">
+      <DependentUpon>ADM_Equipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADM_Login.resx">
+      <DependentUpon>ADM_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADM_Preview.resx">
+      <DependentUpon>ADM_Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ADM_TipoCambio.resx">
+      <DependentUpon>ADM_TipoCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CON_ExplorarEquipo.resx">
+      <DependentUpon>CON_ExplorarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CON_Graficos.resx">
+      <DependentUpon>CON_Graficos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Man_ClientEquip.resx">
+      <DependentUpon>Man_ClientEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MAN_InfoEquip.resx">
+      <DependentUpon>MAN_InfoEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PRO_Incidencia.resx">
+      <DependentUpon>PRO_Incidencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PRO_Orden_Trabajo.resx">
+      <DependentUpon>PRO_Orden_Trabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\ADMI_Equipos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ADMI_Equipos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\reportes.resx">
+      <DependentUpon>reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nodisponible.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no_imagen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ancho-largo-alto2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
